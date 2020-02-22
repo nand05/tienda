@@ -1,0 +1,83 @@
+/* 
+    Created on : 4/01/2020, 12:52:19 PM
+    Author     : fernando
+*/
+body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #005cbf;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    background-color: #28a745
+}
+aside{
+    background-color: #138496;
+}
+.contenedor{
+    height: calc( 100% - 90px);
+    overflow-y: scroll;
+    scrollbar-width:none;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header1{
+
+}
+#header1 > img{
+    height: inherit;
+}
+#Buscar{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 80%;
+}
+#botonBuscar{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 20%;
+}
+.dropdown-carrito{
+    height: 65%;
+    width: 15%;
+}
+.boton-carrito{
+    background-image: url("../Img/Icons/carrito.png");
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.boton-user{
+    background-image: url("../Img/Icons/avatar.png");
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.boton-config{
+    background-image: url("../Img/Icons/settings.png");
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.boton-LR{
+    height: 65%;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+

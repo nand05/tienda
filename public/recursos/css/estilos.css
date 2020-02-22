@@ -1,0 +1,63 @@
+/************************** Inicio Estilos Perfil *************************************/
+#contenedorPerfil{
+	overflow: scroll;
+    width: 100%;
+    overflow-x: hidden;
+    height: calc( 100% - 5.9rem);
+    position: absolute;
+    justify-content: center;
+}
+#formPerfil{
+	display: block;
+	width: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+/************************** Fin Estilos Perfil *************************************/
+/************************** Inicio Estilos Registro *************************************/
+#contenedorRegistro{
+	overflow: scroll;
+    width: 100%;
+    overflow-x: hidden;
+    height: calc( 100% - 5.9rem);
+    position: absolute;
+    justify-content: center;
+}
+.contenedor::-webkit-scrollbar{
+	display: none;
+}
+#formRegistro{
+	display: block;
+	width: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.boton{
+	justify-content: center;
+	display: flex;
+}
+.boton .btn{
+	width: 10rem;
+}
+/************************** Fin Estilos Registro *************************************/
+/************************** Inicio Estilos Login *************************************/
+
+.centrar{
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 5.9rem);
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.centrarCard{
+	position: relative;
+	margin: auto;
+	display: table !important;
+	width: 50%;
+	height: 80%;
+}
+
+/************************** Fin Estilos Login *************************************/
