@@ -47,10 +47,14 @@
 	                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuConfig"> 
 	                    <a class="dropdown-item" href="{{route('perfil')}}">Perfil</a>
 	                    <a class="dropdown-item" href="#">Mis Compras</a>
-	                    <form action="{{route('logout')}}" method="POST">
-	                    	@csrf
-	                    	<button class="dropdown-item" type="submit">Cerrar Sesion</button>
-	                    </form>
+	                   	<a  class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                            Logout
+                                            </a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                {{ csrf_field() }}
+                                            </form>
 	                    
 	                </div>
 	            </div>

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class ControladorGET extends Controller
 {
+
+
     public function ShowPerfil(){
     	return view('Perfil');
     }

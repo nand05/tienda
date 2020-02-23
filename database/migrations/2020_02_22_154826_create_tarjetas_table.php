@@ -15,14 +15,13 @@ class CreateTarjetasTable extends Migration
     {
         Schema::create('tarjetas', function (Blueprint $table) {
             $table->bigIncrements('idTarjeta');
-            $table->bigInteger('id');
+            $table->bigInteger('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('usuarios');
             $table->string('notarjeta');
             $table->date('fechaexp');
             $table->string('titular');
             $table->string('direccion')->nullable();
             $table->timestamps();
-
-            $table->foreign('id')->references('id')->on('usuarios');
         });
     }
 

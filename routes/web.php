@@ -16,20 +16,18 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('perfil','ControladorGET@ShowPerfil')->middleware('auth')->name('perfil');
 
 Route::get('plantilla','ControladorGET@ShowPlantilla')->name('plantilla');
 
 Route::get('registro','ControladorGET@ShowRegistro')->name('registro');
 
 Route::get('login','ControladorGET@ShowLogin')->name('login');
-
 Route::post('registro','ControladorPOST@RegistrarUsuario')->name('regUser');
+
 
 //Route::post('Login','ControladorPOST@autenticacion')->name('autenticacion');
 
 //Route::post('Logout','ControladorPOST@logout')->name('cerrarSesion');
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('perfil','ControladorGET@ShowPerfil')->name('perfil');
-});
 
